@@ -1,10 +1,16 @@
 package com.audit.app.customer.view.all.ncs.model;
 
+import org.springframework.beans.factory.config.BeanDefinition;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
 import java.sql.Date;
 
 /**
  * Created by Infocepts India in 2017.
  */
+@Component
+@Scope(BeanDefinition.SCOPE_PROTOTYPE)
 public class NcInfo
 {
     private int ncId;
